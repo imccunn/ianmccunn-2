@@ -1,0 +1,23 @@
+{
+  "name": "ianmccunn-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^2.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imccunn/ianmccunn-2.git"
+  },
+  "author": "Ian McCunn <ianmccunn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imccunn/ianmccunn-2/issues"
+  },
+  "homepage": "https://github.com/imccunn/ianmccunn-2"
+}

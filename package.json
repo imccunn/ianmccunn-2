@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
+    "lint": "eslint ./client/**/*.js && eslint ./server/**/*.js",
     "build": "babel index.js -d dist/",
     "start": "node dist/index.js --v8-options"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "sequelize": "^3.29.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

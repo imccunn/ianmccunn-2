@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "lint": "eslint ./client/**/*.js && eslint ./server/**/*.js",
-    "build": "babel index.js -d dist/",
+    "build": "webpack",
     "start": "node dist/index.js --v8-options"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
-    "babel-loader": "^6.2.8",
+    "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.18.0",
@@ -24,6 +24,7 @@
     "chai-http": "^3.0.0",
     "enzyme": "^2.6.0",
     "eslint": "^2.7.0",
+    "file-loader": "^0.9.0",
     "mocha": "^3.2.0",
     "react": "^15.4.1",
     "react-redux": "^4.4.6",

@@ -1,8 +1,8 @@
 module.exports = {
     context: __dirname + '/src/client',
-    entry: './index.js',
+    entry: './app.jsx',
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/public',
         filename: 'bundle.js'
     },
     module: {
@@ -14,6 +14,11 @@ module.exports = {
           query: {
             presets: ['es2015', 'react']
           }
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader?presets[]=es2015'
         }
       ]
     }

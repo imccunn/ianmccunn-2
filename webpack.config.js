@@ -1,3 +1,5 @@
+
+
 module.exports = {
     context: __dirname + '/src/client',
     entry: './app.jsx',
@@ -6,19 +8,14 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
-      loaders: [
+      rules: [
         {
           test: /.jsx?$/,
           loader: 'babel-loader',
           exclude: /node_modules/,
-          query: {
-            presets: ['es2015', 'react']
+          options: {
+            presets: ['es2015']
           }
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          loader: 'babel-loader?presets[]=es2015'
         }
       ]
     }

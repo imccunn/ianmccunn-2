@@ -1,9 +1,9 @@
 import express from 'express';
 const app = express();
 
-app.use('/', express.static('public'));
+app.use(express.static('public'));
 
-app.get('/test', (req, res) => {
+app.get('/testing', (req, res) => {
   res.status(200).send({msg: 'hello'});
 });
 

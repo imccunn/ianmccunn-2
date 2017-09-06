@@ -8,6 +8,7 @@
     "lint": "eslint ./client/**/*.js && eslint ./server/**/*.js",
     "build:client": "./node_modules/webpack/bin/webpack.js && cp ./src/client/index.html ./public/index.html",
     "build:server": "babel ./src/server/index.js -o ./dist/index.js",
+    "start:dev": "webpack-dev-server --open",
     "start": "node dist/index.js --v8-options"
   },
   "dependencies": {
@@ -34,7 +35,8 @@
     "react-router": "^4.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   },
   "repository": {
     "type": "git",

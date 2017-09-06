@@ -1,4 +1,4 @@
-
+const path = require('path');
 
 module.exports = {
     context: __dirname + '/src/client',
@@ -18,5 +18,10 @@ module.exports = {
           }
         }
       ]
+    },
+    devServer: {
+      contentBase: path.join(__dirname, 'public'),
+      compress: true,
+      port: 8080
     }
 }

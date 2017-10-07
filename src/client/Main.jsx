@@ -7,9 +7,8 @@ export default class Main extends Component {
 
     render() {
       return (
-        <div>
-          <h1>Hello World</h1>
-          <p>test</p>
+        <div style={{border: '1px solid #000'}}>
+          <h1>Main Component</h1>
         </div>
       );
     }

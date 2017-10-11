@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
-export default class Main extends Component {
+export default class IndexComponent extends Component {
     constructor(props) {
       super(props);
     }
 
     render() {
       return (
-        <div style={{border: '1px solid #000'}}>
-          <h1>Main Component</h1>
+        <div>
+          <h1>IndexComponent</h1>
+          <p>IndexComponent</p>
         </div>
       );
     }

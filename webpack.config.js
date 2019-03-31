@@ -1,5 +1,4 @@
 const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     context: __dirname + '/src/client',
@@ -15,15 +14,12 @@ module.exports = {
           loader: 'babel-loader',
           exclude: /node_modules/,
           options: {
-            presets: ['es2015', 'react']
+            presets: ['@babel/react']
           }
         }
       ]
     },
     plugins: [
-      new CopyWebpackPlugin([
-        {from: './styles/main.css', to: './styles/main.css'}
-      ])
     ],
     devServer: {
       contentBase: path.join(__dirname, 'public'),

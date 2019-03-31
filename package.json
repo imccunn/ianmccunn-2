@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server ./src/client/app.jsx",
     "test": "npm run test"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/imccunn/ianmccunn-2#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "enzyme": "^3.9.0",
     "eslint": "^5.16.0",
@@ -26,8 +30,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
